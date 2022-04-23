@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFC004"
+    tools:context=".OrderActivity">
+
+    <LinearLayout
+        android:id="@+id/circleprof"
+        android:layout_width="650dp"
+        android:layout_height="450dp"
+        android:layout_marginBottom="800dp"
+        android:background="@drawable/circle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nameprofil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/franc"
+        android:gravity="center"
+        android:text="Нурболсун\nТургуналиев"
+        android:textColor="@color/colorAccent"
+        android:textSize="23dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_image" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/cirlogo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="80dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="278dp"
+        android:layout_marginLeft="278dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="53dp"
+        android:layout_marginRight="53dp"
+        android:background="@drawable/bggradient"
+        android:backgroundTint="@color/colorAccent"
+        android:fontFamily="@font/franc"
+        android:gravity="center"
+        android:text="1 АДРЕС"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/circleprof" />
+
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="225dp"
+        android:layout_marginLeft="225dp"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/bggradient"
+        android:backgroundTint="@color/colorAccent"
+        android:fontFamily="@font/franc"
+        android:gravity="center"
+        android:text="2 АДРЕС"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="135dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:gravity="center"
+            android:paddingLeft="0dp">
+
+            <EditText
+                android:id="@+id/addres1"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border"
+                android:cursorVisible="true"
+                android:fontFamily="@font/franc"
+                android:hint="Адрес отправки"
+                android:inputType="text"
+                android:padding="10dp"
+                android:paddingStart="5dp"
+                android:paddingLeft="20dp"
+                android:textCursorDrawable="@null"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:id="@+id/locate"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="-30dp"
+                android:src="@drawable/location_icon" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:paddingLeft="0dp">
+
+            <EditText
+                android:id="@+id/numberview"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border"
+                android:cursorVisible="true"
+                android:fontFamily="@font/franc"
+                android:hint="Номер телефон"
+                android:inputType="number"
+                android:padding="10dp"
+                android:paddingStart="5dp"
+                android:paddingLeft="20dp"
+                android:textCursorDrawable="@null"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:id="@+id/contact"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="-30dp"
+                android:src="@drawable/ic_baseline" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:paddingLeft="0dp"
+            android:paddingRight="-9dp">
+
+            <EditText
+                android:id="@+id/comment1"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border"
+                android:cursorVisible="true"
+                android:fontFamily="@font/franc"
+                android:gravity="top"
+                android:hint="Комментарии"
+                android:inputType="textMultiLine"
+                android:minHeight="70dp"
+                android:paddingStart="5dp"
+                android:paddingLeft="20dp"
+                android:textCursorDrawable="@null"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+
+        // 2 Adress
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:paddingLeft="0dp">
+
+            <EditText
+                android:id="@+id/addres2"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border"
+                android:cursorVisible="true"
+                android:fontFamily="@font/franc"
+                android:hint="Адрес доставки"
+                android:inputType="text"
+                android:padding="10dp"
+                android:paddingStart="5dp"
+                android:paddingLeft="20dp"
+                android:textCursorDrawable="@null"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:id="@+id/locate2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="-30dp"
+                android:src="@drawable/location_icon" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:paddingLeft="0dp">
+
+            <EditText
+                android:id="@+id/numberview2"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border"
+                android:cursorVisible="true"
+                android:fontFamily="@font/franc"
+                android:hint="Номер телефон"
+                android:inputType="number"
+                android:padding="10dp"
+                android:paddingStart="5dp"
+                android:paddingLeft="20dp"
+                android:textCursorDrawable="@null"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:id="@+id/contact2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="-30dp"
+                android:src="@drawable/ic_baseline" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:paddingLeft="0dp"
+            android:paddingRight="-10dp">
+
+            <EditText
+                android:id="@+id/comment2"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border"
+                android:cursorVisible="true"
+                android:fontFamily="@font/franc"
+                android:gravity="top"
+                android:hint="Комментарии"
+                android:inputType="textMultiLine"
+                android:minHeight="70dp"
+                android:paddingStart="5dp"
+                android:paddingLeft="20dp"
+                android:textCursorDrawable="@null"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnorder"
+        android:layout_width="180dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/rectangle"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:text="Заказать"
+        android:textAllCaps="true"
+        android:textColor="@color/colorAccent"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
